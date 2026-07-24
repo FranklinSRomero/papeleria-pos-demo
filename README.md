@@ -1,37 +1,61 @@
-# Papelería Moderna - POS Frontend Demo
+# Stationery POS Frontend Demo
 
-Static mockup of a Point of Sale (POS) system for a Colombian stationery store.
+A static Point of Sale (POS) frontend demo for a stationery store. Open it locally to explore a polished catalog-and-ticket interface with no installation beyond Python.
 
-## Features
+> **Demo only:** product and ticket data are hardcoded; there is no backend, persistence, or real checkout flow.
 
-- Product catalog with categories, stock indicators, and prices.
-- Ticket panel with itemized pricing, taxes, discounts, and payment options.
-- Dark and light theme toggle with the selected theme stored in local storage.
-- Keyboard shortcut references for help, search, a new ticket, and checkout.
+## Quick path
 
-## Tech Used
+1. Start the local server:
 
-- Vanilla HTML5
-- Vanilla CSS3
-- Vanilla JavaScript
-- Python HTTP server
+   ```bash
+   python3 server.py
+   ```
 
-## How to Run
+2. Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
+3. Browse the catalog or switch between dark and light themes.
 
-```bash
-python server.py
-```
+## Interface
 
-Or, on systems where Python 3 is invoked separately:
+![Stationery POS interface](screenshot-pos.png)
 
-```bash
-python3 server.py
-```
+## What you can recognize at a glance
 
-Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser.
+- [x] Product catalog with categories, SKUs, prices, and stock indicators
+- [x] Pre-populated sales ticket with subtotal, 16% tax, discount, and total
+- [x] Cash and card payment controls
+- [x] Dark/light theme toggle persisted in local storage
+- [x] Responsive layout for desktop and narrower screens
+- [x] Visual references for POS keyboard shortcuts
 
-## Notes
+## Details
 
-This is a **STATIC DEMO** with hardcoded data and no backend.
+| Topic | Choice |
+| --- | --- |
+| UI | Vanilla HTML5, CSS3, and JavaScript |
+| Local server | Python `ThreadingHTTPServer` on `127.0.0.1:8000` |
+| Currency display | Mexican pesos (`es-MX` / `MXN`) |
+| Data source | In-memory arrays in `app.js` |
+| Theme preference | Browser `localStorage` |
 
-There are no screenshots yet. Add one here to show the POS interface.
+<details>
+<summary><strong>Project structure</strong></summary>
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | POS page structure |
+| `styles.css` | Layout, responsive styles, and theme variables |
+| `app.js` | Hardcoded catalog/ticket rendering and theme toggle |
+| `server.py` | Minimal local development server |
+
+</details>
+
+## Known limits
+
+- Data is hardcoded and resets on reload.
+- There is no backend, database, authentication, inventory synchronization, or payment integration.
+- The displayed keyboard shortcuts are visual references; they do not have keyboard event handlers.
+
+## Next step
+
+Use this as a visual frontend reference, or connect the catalog and ticket state to a real POS API.
