@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papeleria Moderna POS</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235a91ea'/%3E%3Ctext x='16' y='21' font-size='16' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-mark">P</div>
+        <nav class="sidebar-nav">
+          <button class="nav-item active">
+            <span class="nav-icon">▦</span>
+            <span>POS</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">◫</span>
+            <span>WhatsApp</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">▤</span>
+            <span>Inventario</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">◧</span>
+            <span>Reportes</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">⚙</span>
+            <span>Ajustes</span>
+          </button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="title-group">
+            <h1>Papelería Moderna</h1>
+          </div>
+          <label class="searchbox">
+            <span>⌕</span>
+            <input type="text" placeholder="Buscar productos (F2)..." />
+          </label>
+          <div class="topbar-actions">
+            <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+              <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+              <span class="theme-toggle-label">Modo claro</span>
+            </button>
+            <button class="cashier-pill">Cajero: Juan Perez</button>
+            <button class="icon-button">🔔</button>
+            <button class="icon-button">?</button>
+            <button class="avatar-button">◫</button>
+          </div>
+        </header>
+
+        <section class="content-grid">
+          <section class="catalog-panel">
+            <div class="category-row" id="categories"></div>
+            <div class="products-grid" id="products"></div>
+            <footer class="hotkeys">
+              <span>F1 AYUDA</span>
+              <span>F2 BUSCAR</span>
+              <span>F5 NUEVO TICKET</span>
+              <span>F10 COBRAR</span>
+            </footer>
+          </section>
+
+          <aside class="ticket-panel">
+            <div class="ticket-header">
+              <div>
+                <h2>Ticket de Venta</h2>
+                <p>ID : #45920-A</p>
+              </div>
+            </div>
+
+            <div class="assign-row">
+              <button class="assign-button">Asignar Cliente</button>
+              <button class="trash-button">🗑</button>
+            </div>
+
+            <div class="ticket-items" id="ticket-items"></div>
+
+            <div class="ticket-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal"></span>
+              </div>
+              <div class="summary-row">
+                <span>Impuestos (16%)</span>
+                <span id="taxes"></span>
+              </div>
+              <div class="summary-row discount">
+                <span>Descuento Promocional</span>
+                <span id="discount"></span>
+              </div>
+              <div class="total-row">
+                <span>TOTAL</span>
+                <strong id="total"></strong>
+              </div>
+            </div>
+
+            <div class="payment-row">
+              <button class="payment-button">Efectivo</button>
+              <button class="payment-button">Tarjeta</button>
+            </div>
+
+            <button class="checkout-button">Finalizar Operación</button>
+
+            <div class="terminal-status">
+              <span class="status-dot"></span>
+              <span>TERMINAL ONLINE</span>
+              <span>•</span>
+              <span>BODEGA CENTRAL</span>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
