@@ -2,7 +2,15 @@
 
 Un demo estático de frontend para punto de venta (POS) de papelería. Lo podés abrir localmente para recorrer una interfaz de catálogo y ticket, sin instalar nada más que Python.
 
+[![Demo en vivo](https://img.shields.io/badge/Demo_en_vivo-GitHub_Pages-2ea44f?logo=github)](https://franklinsromero.github.io/papeleria-pos-demo/)
+
 > **Es un demo:** los productos y el ticket están hardcodeados; no hay backend, persistencia ni cobro real.
+
+## Demo en vivo
+
+Abrí el sitio publicado: [https://franklinsromero.github.io/papeleria-pos-demo/](https://franklinsromero.github.io/papeleria-pos-demo/).
+
+> **Configuración de GitHub Pages:** después de la primera ejecución del workflow de despliegue, andá a **Settings → Pages** y elegí **GitHub Actions** como **Source** si Pages todavía no está habilitado.
 
 ## Camino rápido
 

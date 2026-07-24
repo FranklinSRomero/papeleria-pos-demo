@@ -2,7 +2,15 @@
 
 A static Point of Sale (POS) frontend demo for a stationery store. Open it locally to explore a polished catalog-and-ticket interface with no installation beyond Python.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?logo=github)](https://franklinsromero.github.io/papeleria-pos-demo/)
+
 > **Demo only:** product and ticket data are hardcoded; there is no backend, persistence, or real checkout flow.
+
+## Live Demo
+
+Open the deployed site: [https://franklinsromero.github.io/papeleria-pos-demo/](https://franklinsromero.github.io/papeleria-pos-demo/).
+
+> **GitHub Pages setup:** after the first deployment workflow run, go to **Settings → Pages** and set **Source** to **GitHub Actions** if Pages is not already enabled.
 
 ## Quick path
 
