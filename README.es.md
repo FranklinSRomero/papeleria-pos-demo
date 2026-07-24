@@ -1,7 +1,7 @@
 # Demo frontend de POS para papelería — Primera iteración
 
 > **Línea de evolución:** Esta es la primera iteración del concepto POS.  
-> `papeleria-pos-demo` *(este repo — mockup estático)* → [`frank-launchpad`](https://github.com/FranklinSRomero/frank-launchpad) *(SvelteKit + NestJS + chatbot)* → [`frank-pos`](https://github.com/FranklinSRomero/frank-pos) *(API más rica + prototipos UI)*
+> `papeleria-pos-demo` *(este repo — mockup estático)* → [`frank-launchpad`](https://github.com/FranklinSRomero/frank-launchpad) *(SvelteKit + NestJS + chatbot)* → [`frank-pos-ui`](https://github.com/FranklinSRomero/frank-pos-ui) *(API más rica + prototipos UI)*
 
 Un demo estático de frontend para punto de venta (POS) de papelería. Lo podés abrir localmente para recorrer una interfaz de catálogo y ticket, sin instalar nada más que Python.
 
